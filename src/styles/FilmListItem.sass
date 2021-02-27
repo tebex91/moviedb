@@ -1,0 +1,56 @@
+@import "./index"
+
+.list-item
+  flex-shrink: 1
+  align-self: stretch
+  display: flex
+  flex-direction: column
+  position: relative
+  width: 210px
+  height: 100%
+  border-radius: 7px
+  background-color: $white_color
+  color: $black_color
+  img
+    height: 315px
+    border-radius: 7px 7px 0 0
+  .rating
+    display: flex
+    justify-content: center
+    align-items: center
+    position: absolute
+    top: 295px
+    left: 15px
+    width: 40px
+    height: 40px
+    border-width: 3px
+    border-style: solid
+    border-radius: 50%
+    background-color: $black_color
+    color: $white_color
+    &.green
+      border-color: #70bd6d
+    &.orange
+      border-color: #edb34e
+    &.red
+      border-color: #f56c62
+    &.gray
+      border-color: #acadac
+  .selected-label
+    @include selected-label
+    top: 10px
+    right: 10px
+    font-size: 32px
+    line-height: 32px
+    &.selected
+      color: rgba(230, 62, 21, 0.6)
+  .info
+    display: flex
+    flex-direction: column
+    padding: 25px 15px 15px
+    .title
+      word-break: break-word
+      font-size: 18px
+      font-weight: bold
+    .release
+      color: $gray_color

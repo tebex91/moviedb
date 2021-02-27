@@ -1,0 +1,28 @@
+@import "./index"
+
+.header
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  margin-bottom: 20px
+  width: 100%
+  padding: 0 20px 10px
+  border-bottom: 2px solid $yellow_color
+  background-color: $black_color
+  .logo
+    flex-grow: 1
+    .link
+      color: $yellow_color
+      font-family: 'Hachi Maru Pop', cursive
+      font-size: 32px
+      font-weight: bold
+      text-decoration: none
+  .selected-label
+    margin-right: 30px
+    color: $black_color
+    font-size: 36px
+    line-height: 36px
+    -webkit-text-stroke: 2px $yellow_color
+    &.fulfilled
+      color: $yellow_color
+

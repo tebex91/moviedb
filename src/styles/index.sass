@@ -1,0 +1,35 @@
+$yellow_color: #ffff00
+$black_color: #212024
+$white_color: #ffffff
+$gray_color: #838583
+
+@mixin circuit-btn
+  height: 35px
+  padding: 5px 15px
+  background-color: $black_color
+  color: $yellow_color
+  font-size: 20px
+  font-weight: bold
+  border: 1px solid $yellow_color
+  border-radius: 5px
+  outline: none
+  cursor: pointer
+  &:hover
+    background-color: $yellow_color
+    color: $black_color
+
+@mixin selected-label
+  position: absolute
+  color: rgba(135, 135, 135, 0.6)
+  cursor: pointer
+
+*
+  box-sizing: border-box
+
+body
+  background-color: $black_color
+  font-family: 'Arial', sans-serif
+  color: $yellow_color
+
+li
+  list-style: none
