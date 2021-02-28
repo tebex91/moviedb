@@ -25,4 +25,4 @@ const SearchPanel = ({ history }) => {
   )
 }
 
-export default withRouter(SearchPanel);
+export default withRouter(SearchPanel)

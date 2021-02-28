@@ -13,10 +13,10 @@ const filmList = (state, action) => {
   }
   
   if(state === undefined) {
-    return initialValue;
+    return initialValue
   }
   
-  const { films } = state;
+  const { films } = state
   
   switch (action.type) {
     case FETCH_FILMS_REQUEST:
@@ -38,9 +38,9 @@ const filmList = (state, action) => {
         error: action.payload
       }
     case CLEAR_FILM_LIST:
-      return initialValue;
+      return initialValue
     default:
-      return state.filmList
+      return state
   }
 }
 

@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 import '../styles/MainPage.sass'
-import collage from '../styles/Сollage.jpg'
+import collage from '../styles/img/Сollage.jpg'
 
 const MainPage = () => {
   return (

@@ -1,13 +1,13 @@
 import React from 'react'
 import { withRouter } from 'react-router-dom'
 
-import { queryButtons } from '../constants/QueryButtons'
+import { QUERY_BUTTONS } from '../constants/QueryButtons'
 
 import '../styles/QueryPanel.sass'
 
 const QueryPanel = ({history, location}) => {
   const buttons = (
-    queryButtons.map(({title, path}) => {
+    QUERY_BUTTONS.map(({title, path}) => {
       const chosenClass = location.pathname.includes(path) ? ' chosen' : ''
       return (
         <li
@@ -18,6 +18,7 @@ const QueryPanel = ({history, location}) => {
         </li>)
     })
   )
+  
   return (
     <ul className="query-panel">
       {buttons}

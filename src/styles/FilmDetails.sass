@@ -1,0 +1,61 @@
+@import "./index"
+
+.film-details
+  display: flex
+  justify-content: center
+  align-items: center
+  position: relative
+  margin: 40px auto
+  width: 940px
+  padding: 40px
+  border-radius: 7px
+  background-color: $white_color
+  color: $black_color
+  div
+    display: flex
+    .selected-label
+      @include selected-label
+      top: 35px
+      left: 35px
+      padding: 7px 10px
+      background-color: rgba(135, 135, 135, 0.4)
+      border-radius: 3px
+      font-size: 25px
+      &.selected
+        color: #e63e15
+    .film-rating
+      position: absolute
+      top: 20px
+      right: 20px
+      font-size: 20px
+      font-weight: bold
+      color: $gray_color
+    .film-poster
+      margin-right: 15px
+      width: 350px
+      height: 525px
+    .film-info
+      display: flex
+      flex-direction: column
+      width: 500px
+      .film-title
+        margin: 10px 0
+      .film-tagline
+        font-size: 18px
+        font-style: italic
+        color: $gray_color
+      .film-overview
+        margin-top: 15px
+        line-height: 1.3
+      table
+        margin-top: 15px
+        border-collapse: collapse
+        font-size: 14px
+        td
+          padding: 10px
+          border-bottom: 1px solid #d3d3d3
+        td:first-child
+          width: 25%
+        tr:last-child>td
+          border-bottom: none
+

@@ -1,4 +1,4 @@
-export default class MovieApi {
+export default class MovieApiService {
   _apiBase = 'https://api.themoviedb.org/3/movie/'
   _apiBasePopular = 'https://api.themoviedb.org/3/movie/popular?'
   _apiBaseTopRated = 'https://api.themoviedb.org/3/movie/top_rated?'
